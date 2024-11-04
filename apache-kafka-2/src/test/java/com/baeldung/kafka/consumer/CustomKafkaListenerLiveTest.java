@@ -72,7 +72,7 @@ class CustomKafkaListenerLiveTest {
         }
     }
 
-    private static KafkaProducer<String, String> testKafkaProducer() {
+    private static § testKafkaProducer() {
         Properties props = new Properties();
         props.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, KAFKA_CONTAINER.getBootstrapServers());
         props.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
